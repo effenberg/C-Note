@@ -128,7 +128,10 @@ base.<MethodName>
 1. An abstract class cannot be instantiated， whereas an abstract method does not have an implementation and must be overridden in any nonabstract derived class. If any class contains any abstract methods, that class must be declared as an abstract.
 2. The sealed modifier does not allow to create a subclass or override a method.
 
+**as And is operators**
 
+1. The **as** operator works similar to the cast operator within the class hierarchy and returns a reference to the object or a null. So, verify for null before using the reference.
+2. The **is** operator returns true or false, depending on whether the condition is fulfilled and the object is of the sepcified type.
 
 
 ```

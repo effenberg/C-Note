@@ -107,9 +107,16 @@ public static class StringExtensions
         }
     }
 ```
+# Chapter 4 Object Oriented Programming #
 
+**Virtual**
+1. method signature: all parameter type and the method name
+2. Neither member fild nor static functions can be declard as virtual. Only for declaring method and property.
+3. In C#, functuions are not virtual bydefault, but can be explicitly declared as virtual. By contrast, all functions in Java are virtual.
 
+**Hiding Methods**
 
+The new method modifier is to deal with version conflicts and react to changes on base classes after the derived class was done.
 
 
 

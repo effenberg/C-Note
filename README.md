@@ -4,6 +4,26 @@ study on C#
 ---
 
 # Chapter3 Objects & Types #
+
+** out in Parameters **
+
+out关键字通过引用传递参数。 它与 ref 关键字相似，只不过 ref 要求在传递之前初始化变量。 若要使用 out 参数，方法定义和调用方法均必须显式使用 out 关键字。作为 out 参数传递的变量在方法调用中传递之前不必进行初始化。 但是，被调用的方法需要在返回之前赋一个值。
+
+```
+ // version 2
+            string input2 = Console.ReadLine();
+            if (int.TryParse(input2, out int result2))
+            {
+                Console.WriteLine($"result: {result2}");
+            }
+            else
+            {
+                Console.WriteLine("not a number");
+            }
+```            
+
+in modifier guarantees that the data this is sent into the method does not change (when passing a value type)
+
 **Nullable Types**
 ```
 int? x3= null;
@@ -14,7 +34,7 @@ int x6 = x3 ?? -1;
 ```
 **Enum Types**
 ```
-[Flags]
+[Flags] //Attributes
     public enum DaysOfWeek
     {
         Monday = 0x1,

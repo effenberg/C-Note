@@ -118,7 +118,21 @@ public static class StringExtensions
 
 The new method modifier is to deal with version conflicts and react to changes on base classes after the derived class was done.
 
+**Calling Base Versions of Methods**
 
+base.<MethodName>
+
+**Abstract Classes Methods**
+
+1. An abstract class cannot be instantiated， whereas an abstract method does not have an implementation and must be overridden in any nonabstract derived class. If any class contains any abstract methods, that class must be declared as an abstract.
+2. The sealed modifier does not allow to create a subclass or override a method.
+
+
+
+
+```
+
+```
 
 
 

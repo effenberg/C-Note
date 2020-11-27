@@ -29,9 +29,12 @@ int x6 = x3 ?? -1;
         AllWeek = Workday | Weekend
     }
 }
+```
 
-// Parse string to a Enum types TryPaser<T>. Return all names of enum Enum.GetNames(). Returen all values of enum Enum.GetValues(typeof(Enum)) 
- private static void UsingEnumClass()
+Parse string to a Enum types TryPaser<T>. Return all names of enum Enum.GetNames(). Returen all values of enum Enum.GetValues(typeof(Enum)) 
+
+```    
+    private static void UsingEnumClass()
         {
             Color red;
             if (Enum.TryParse<Color>("Red", out red))

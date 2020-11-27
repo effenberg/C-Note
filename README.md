@@ -6,8 +6,8 @@ study on C#
 
 int x5 = x3.HasValue ? x3.Value : -1;
 
-int x6 = x3 ?? -1;```
-
+int x6 = x3 ?? -1;
+```
 
 
 

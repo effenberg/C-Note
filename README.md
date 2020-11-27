@@ -1,7 +1,9 @@
 # C-Note
 study on C#
 
-#Chapter3 Objects & Types#
+---
+
+# Chapter3 Objects & Types #
 **Nullable Types**
 ```
 int? x3= null;

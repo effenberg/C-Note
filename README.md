@@ -119,8 +119,9 @@ public static class StringExtensions
 The new method modifier is to deal with version conflicts and react to changes on base classes after the derived class was done.
 
 **Calling Base Versions of Methods**
-
+```
 base.<MethodName>
+```
 
 **Abstract Classes Methods**
 

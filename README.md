@@ -138,11 +138,17 @@ base.<MethodName>
 **coalescing operater: ??** If the variable is null, the right side of the operateor is invoked.
 
 **概念** 假设Orange类是Fruit类的子类，以集合类List<T>为例：
+ 
 **型变**：用来描述类型转换后的继承关系（即协变、逆变和不变的统称）。比如：List<Orange>是List<Fruit>的子类型吗？答案是No，两者并没有关系，并不能相互读写数据。因此，型变是处理如List<Orange>(List<? extends Orange>)和List<Fruit>子类型关系的一种表达方式。
+
 **协变(covariance)**：满足条件诸如List<Orange>是List<? extends Fruit>的子类型时，称为协变。
+
 **逆变(covariance)**：满足条件List<Fruit>是List<? super Orange>的子类型时，称为逆变。
+
 **不变(invariance)**：表示List<Orange>和List<Fruit>不存在型变关系。
+ 
 注：子类(subclass)和子类型(subtype)不是同一个概念。
+
 
 ```
 
